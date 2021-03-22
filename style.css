@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.body-container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-image {
+    width: 100vw;
+}
+
+.navbar-nav {
+    width: 66%;
+    color: #058ea6;
+}
+
+.nav-item {
+    margin: auto;
+}
+
+.nav-item a {
+    font-size: 25px;
+}
+
+.nav-item a.active {
+    text-decoration: underline;
+}
