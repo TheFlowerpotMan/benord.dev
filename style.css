@@ -9,7 +9,11 @@ body{
 }
 
 .main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100vw;
+    z-index: -1;
 }
 
 .navbar-nav {
@@ -27,4 +31,23 @@ body{
 
 .nav-item a.active {
     text-decoration: underline;
+}
+
+.main-card {
+    /* margin-left: 75%; */
+    width: 75%;
+    margin-left: 40%;
+    margin-top: 200px;
+}
+
+.bio-card {
+    width: 75%;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.work-card {
+    width: 75%;
+    margin: auto;
+    margin-top: 200px;
 }
