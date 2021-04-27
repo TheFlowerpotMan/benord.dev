@@ -197,14 +197,14 @@ body{
     margin-right: 10px;
 }
 
-.logo-container:hover {
+.logo-container img {
+    width: 100%;
+    /* width: 300px; */
+    max-height: 250px;
+    vertical-align: middle;
+}
+
+.logo-container img:hover {
     border: 1px solid black;
     border-radius: 3px;
 }
-
-.logo-container img {
-    width: 100%;
-    width: 245px;
-    height: 245px;
-}
-
