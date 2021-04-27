@@ -4,49 +4,216 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./style.css">
-  <title>Home</title>
+  <link rel="<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">"
+  <title>Ben Ord Dev</title>
 </head>
 
-<body class="container body-container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./Test Logo.jpg" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./work.html">WORK</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./resume.html">RESUME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./other.html">OTHER</a>
-          </li>
-        </ul>
+<body">
+  <div class="container body-container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/Test Logo.jpg" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">WORK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">RESUME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tech">TECHNOLOGY</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
+  <img src="./assets/temp-background.png" alt="Temporary background image" class="main-image">
 
-  <div class="card main-card">
-    <div class="card-body">
-      <h5 class="card-title">WELCOME!</h5>
-      <p class="card-text">I am a developer that specalizes in full stack development of geospatial applications.</p>
-      <p>Feel free to enjoy my previous work and send me an email if you think there is something I can do for you.</p>
-      <a href="./other.html" class="btn btn-primary">Contact</a>
+  <div class="welcome-text">
+    <h3>WELCOME!</h3>
+    <p>I am a developer that specalizes in full stack development of geospatial applications.</p>
+    <p>Feel free to enjoy my previous work and send me an email if you think there is something I can do for you.</p>
+    <a href="mailto:ord.benjamin@gmail.com" class="btn btn-secondary">Contact</a>
+  </div>
+
+  <div class="about-container" id="about">
+    <div class="profile-img-contianer">
+      <img class="profile-img" src="./assets/Profile Picture - crop.png" alt="profile picture" />
+    </div>
+    <div class="about-text">My name is Ben Ord, I am 30-years-old, married with three children and we live in Ephrata
+      Pennsylvania. I have been a software developer for 5 years or so and it has been a wild ride. In 2016 I started
+      taking online web development classes with which I was able to secure an internship as a developer. A year later
+      that became a full-time development position, writing geospatial applications for the Pennsylvania Department of
+      Transportation and that is what I am still doing today.
+      In the last 5 years my wife and I have also had 3 children, bought a house, I have almost completed an associated
+      in Web development and we worked with a small website building company on the side. There has been a lot of hard
+      times but through it all I have learned the value of hard work, commitment and determination.
+      I like to bring creativity to the work I do whether that is development or fixing my house and I am a firm
+      believer in making sure that what I do benefits others, not just myself. In my spare time I love to play ultimate
+      frisbee and disc golf, I also play guitar and drums and as a family we love to walk, hike and visit the beach.
     </div>
   </div>
-  
-  <img src="./temp-background.png" alt="Temporary background image" class="main-image">
+
+  <div class="work-container" id="work">
+    <h2>Previous Work</h2>
+    <p class="work-subtitle">Below you will be able to view some of my previous work. Click on the image to visit!</p>
+    <div class="work-project left-img">
+      <a href="https://gis.penndot.gov/onemap/" target="_blank">
+        <div class="work-image-contianer">
+          <img src="./assets/OneMapScreenshot.png" alt="Screenshot of One Map in action" style="width: 400px">
+        </div>
+      </a>
+      <div class="work-text-container">
+        <h4>PennDOT One Map</h4>
+        <p>One map is a geospatial solution designed for use by the Pennsylvania Dept of Transportation and the public.
+          It's focus is to provide a way to visualize PennDOT data on a map. (More info to come)</p>
+      </div>
+    </div>
+    <div class="work-project right-img">
+      <div class="work-text-container">
+        <h4>GitHub</h4>
+        <p>There are always projects that I am working on or contributing to so please head over to my GitHub profile to
+          see what I am invlolved in.
+          If there is something interesting that you want to use or contribute to, let me know, I would love to hear
+          from you.
+        </p>
+      </div>
+      <a href="https://github.com/TheFlowerpotMan" target="_blank">
+        <div class="work-image-contianer">
+          <img src="./assets/GitHub_Logo.png" alt="GitHub Logo" style="width: 400px">
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="resume-container" id="resume">
+    <h2>Resume</h2>
+    <div>
+      <p class="resume-address">135 N State St, Ephrata PA, 17522 | (717)-419-1910 | ord.benjamin@gmail.com</p>
+      <hr>
+      <h5>Web Application Developer</h5>
+      <p>Motivated and organized individual with the ability to complete assigned tasks quickly and efficiently
+        without the need to be micromanaged. Four years of development experience designing and successfully
+        implementing applications and websites on both a small and large scale.</p>
+      <hr>
+      <h5>Technical Skills</h5>
+      <p>Languages: Javascript, Typescript, HTML, CSS, C#, Oracle PL/SQL, Java, Apex, SOQL, PHP<br>
+        Frameworks: Angular, React, GraphQL, ASP.NET Web Api, ASP.NET Core, .NET Framework,<br>
+        NodeJS, ESRI Javascript API, Gulp, Jasmine, Bootstrap, HTML Web Components, Wordpress<br>
+        Dev Tools: VS Code, Visual Studio, SQL Developer, Azure DevOps, TFS, GitHub, SourceTree</p>
+      <hr>
+      <h5>Employment</h5>
+      <p>Geo Decisions - Web Application Developer<br>
+        December 2017 - December 2019 and September 2020 - Present<br>
+        Geo Decisions, a subsidiary of Gannett Fleming Inc. Responsible for the development, implementation and
+        maintenance of multiple geospatial applications used to map, track and manage PennDOT maintenance data.
+        Working in small agile teams using latest development technologies to efficiently accomplish tasks. Utilizing
+        Angular and Typescript for front end and .Net Core and GraphQL on the server.</p>
+
+      <p>Candoris - Software Developer January 2020 - August 2020<br>
+        Responsibilities include design and implementation of web applications and web API’s, migrating customer data
+        into the Salesforce CRM and configuration of clients' Salesforce environments. All work completed on time to a
+        high level with regular client communication. Fast paced environment requiring the ability to manage multiple
+        client workloads at the same time.</p>
+
+      <p>Integrity Landworks - Foreman April 2015 - September 2017<br>
+        As job foreman for Integrity my responsibilities were to ensure that the employees I worked with carried out
+        their tasks adequately and that jobs progressed according to schedule. I had to work closely with and
+        communicate effectively with my boss at all times, whilst also making sure that the customer was satisfied
+        with work performed.</p>
+
+      <p>References available upon request</p>
+      <hr>
+      <h5>Education</h5>
+
+      <p>Harrisburg Area Community College: 2017 - Present<br>
+        Working to attain Associates in Web Application Development, expected to graduate in Fall 2020.<br>
+        GED: 2016<br>
+        Sparsholt College: 2006 - 2008<br>
+        BTEC National Diploma in Outdoor Education<br>
+        Romsey School: 2001 - 2006</p>
+      <hr>
+    </div>
+    <form method="get" action="./Resume.pdf" target="_blank">
+      <button class="btn btn-secondary" type="submit">Download a copy here</button>
+    </form>
+  </div>
+  <div class="tech" id="tech">
+    <h2>Technology</h2>
+    <p class="subtitle"><em>To learn more about some of the technologies that I enjoy using, please use the links below</em></p>
+    <div class="tech-logos">
+      <div class="logo-container">
+        <a href="https://html.spec.whatwg.org/multipage/" target="_blank">
+          <div class="logo-hover">
+            <img src="./assets/html-logo.png" />
+          </div>
+        </a>
+      </div>
+      <div class="logo-container">
+        <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">
+          <div class="logo-hover">
+            <img src="./assets/css-logo.png" />
+          </div>
+        </a>
+      </div>
+      <div class="logo-container">
+        <a href="https://www.javascript.com/" target="_blank">
+          <div class="logo-hover">
+            <img src="./assets/js-logo.png" />
+          </div>
+        </a>
+      </div>
+      <div class="logo-container">
+        <a href="https://www.typescriptlang.org/" target="_blank">
+          <div class="logo-hover">
+            <img src="./assets/ts-logo-512.png" />
+          </div>
+        </a>
+      </div>
+      <div class="logo-container">
+        <a href="https://angular.io" target="_blank">
+          <div class="logo-hover">
+            <img src="./assets/angular.png" />
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="logo-container">
+      <a href="https://reactjs.org" target="_blank">
+        <div class="logo-hover">
+          <img src="./assets/react-logo.png" />
+        </div>
+      </a>
+    </div>
+    <div class="logo-container">
+      <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">
+        <div class="logo-hover">
+          <img src="./assets/c-logo.png" />
+        </div>
+      </a>
+    </div>
+    <div class="logo-container">
+      <a href="https://wordpress.org" target="_blank">
+        <div class="logo-hover">
+          <img src="./assets/wordpress-logo.png" />
+        </div>
+      </a>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
